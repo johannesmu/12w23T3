@@ -1,0 +1,16 @@
+body {
+    background-color: bisque;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    /* vh = viewport height or height of the view area */
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.logo {
+    width: 60px;
+}
+.page-header{
+    background-color: #94d4d6;
+    font-family: 'Lato', sans-serif;
+}
