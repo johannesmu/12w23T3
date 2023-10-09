@@ -9,8 +9,25 @@ body {
 }
 .logo {
     width: 60px;
+    padding: 10px;
 }
 .page-header{
     background-color: #94d4d6;
     font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.site-navigation {
+    display: flex;
+    flex-direction: row;
+}
+.site-navigation a {
+    padding: 1em;
+    text-decoration: none;
+}
+.site-navigation a:hover {
+    background-color: #5c8486;
+    color: #c9c9c9;
 }
