@@ -1,0 +1,12 @@
+@media screen and (max-width: 400px ) {
+    .logo {
+        width: 40px;
+    }
+    .site-navigation {
+        min-width: 100%;
+        justify-content: space-between;
+    } 
+    .page-header {
+        justify-content: center;
+    }
+}
