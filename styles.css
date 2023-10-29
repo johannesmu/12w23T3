@@ -53,3 +53,11 @@ img {
     font-size: 4em;
     text-shadow: 0px 0px 2px black;
 }
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3ch;
+    max-width: 1000px;
+    padding: 1em;
+    margin: 5ch auto; 
+}
