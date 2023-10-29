@@ -38,3 +38,18 @@ img {
     background-color: #5c8486;
     color: #c9c9c9;
 }
+.banner {
+    background-color: #5c8486;
+    min-height: 50vh;
+    display: grid;
+    place-items: center center;
+    background-image: url("images/pexels-quang-nguyen-vinh-2883704.jpg");
+    background-size: cover;
+    background-position: center -200px;
+    background-repeat: no-repeat;
+}
+.banner-text {
+    color: #171717;
+    font-size: 4em;
+    text-shadow: 0px 0px 2px black;
+}
