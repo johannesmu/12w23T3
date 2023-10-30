@@ -1,4 +1,4 @@
-@media screen and (max-width: 400px ) {
+@media screen and (max-width: 480px ) {
     .logo {
         width: 40px;
     }
@@ -8,5 +8,12 @@
     } 
     .page-header {
         justify-content: center;
+    }
+    .content {
+        grid-template-columns: 1fr;
+    }
+    .banner {
+        min-height: 30vh;
+        background-position: center;
     }
 }

@@ -61,3 +61,22 @@ img {
     padding: 1em;
     margin: 5ch auto; 
 }
+.card-image {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    object-position: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3ch;
+}
+.social a {
+    font-size: 2em;
+    color: #3a5355
+}
+.copyright {
+    text-align: center;
+}
