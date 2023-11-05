@@ -57,6 +57,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 3ch;
+    row-gap: 2ch;
     max-width: 1000px;
     padding: 1em;
     margin: 5ch auto; 
@@ -65,6 +66,14 @@ img {
     aspect-ratio: 4/3;
     object-fit: cover;
     object-position: center;
+}
+.card {
+    border: solid 1px #a7a7a7;
+    border-radius: 1ch;
+    overflow: hidden;
+}
+.card-content {
+    padding: 2ch;
 }
 
 .social {
