@@ -27,7 +27,28 @@
         </nav>
     </header>
     <main>
-
+        <form id="contact-form" method="post" action="https://example.com">
+            <h2>Contact Us</h2>
+            <label for="firstname">First Name</label>
+            <input class="input" type="text" id="firstname" placeholder="Jane" name="first">
+            <label for="lastname">Last Name</label>
+            <input class="input" type="text" id="lastname" placeholder="Smith" name="last">
+            <label for="email">Email Address</label>
+            <input class="input" type="email" id="email" placeholder="jane@example.com" name="email">
+            <div class="radiobuttons">
+                <p>Do you want spam?</p>
+                <input type="radio" name="choice" id="yes" value="yes" checked>
+                <label for="yes">yes</label>
+                <input type="radio" name="choice" id="no" value="no">
+                <label for="no">no</label>
+            </div>
+            <label for="message">Message</label>
+            <textarea rows="6" cols="60" class="input" name="message" id="message" placeholder="Hey you're awesome!"></textarea>
+            <div class="buttons">
+                <button type="reset">Cancel</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
     </main>
     <footer>
         <nav class="social">
