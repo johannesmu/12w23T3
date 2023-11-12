@@ -16,4 +16,7 @@
         min-height: 30vh;
         background-position: center;
     }
+    .card2 {
+        grid-column: span 1;
+    }
 }
