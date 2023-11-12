@@ -53,6 +53,22 @@ img {
     background-color: #5c8486;
     color: #c9c9c9;
 }
+.nav-button {
+    background-color: transparent;
+    border: solid 1px #999999;
+    border-radius: 0.5em;
+    align-self: center;
+    margin-left: 1em;
+    display: none;
+}
+.nav-button i {
+    font-size: 2em;
+    padding: 0.5em;
+    padding-bottom: 0.1em;
+}
+.button-text {
+    display: block;
+}
 .banner {
     background-color: #5c8486;
     min-height: 50vh;

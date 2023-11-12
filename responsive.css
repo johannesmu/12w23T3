@@ -4,10 +4,15 @@
     }
     .site-navigation {
         min-width: 100%;
+        flex-direction: column;
         justify-content: space-between;
     } 
+    .site-navigation a {
+        display: block;
+        min-width: 100%;
+    }
     .page-header {
-        justify-content: center;
+        justify-content: space-between;
     }
     .content {
         grid-template-columns: 1fr;
@@ -18,5 +23,8 @@
     }
     .card2 {
         grid-column: span 1;
+    }
+    .nav-button {
+        display: block;
     }
 }
