@@ -53,6 +53,32 @@ img {
     background-color: #5c8486;
     color: #c9c9c9;
 }
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:100%;
+    background-color: aliceblue;
+    max-height: 0vh;
+    overflow: hidden;
+    transition: linear 0.5s max-height;
+}
+.dropdown-menu a {
+    white-space: nowrap;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown > a {
+    display: block;
+}
+.dropdown:hover .dropdown-menu {
+    max-height: 30vh;
+    overflow: hidden;
+}
+.dropdown:last-child .dropdown-menu {
+    right: 0px;
+}
 .nav-button {
     background-color: transparent;
     border: solid 1px #999999;
