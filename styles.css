@@ -72,6 +72,11 @@ img {
 .dropdown > a {
     display: block;
 }
+.dropdown > a::after {
+    content: "\2bc6";
+    font-size: 0.8em;
+    margin-left: 0.5em;
+}
 .dropdown:hover .dropdown-menu {
     max-height: 30vh;
     overflow: hidden;
