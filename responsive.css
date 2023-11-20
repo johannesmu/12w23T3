@@ -34,4 +34,8 @@
         display: block;
         margin: 0.5em;
     }
+    .dropdown-menu {
+        overflow: auto;
+        position: static;
+    }
 }
