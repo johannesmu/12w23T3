@@ -1,5 +1,13 @@
+:root {
+    --primary-color: hsla(8, 70%, 62%, 1);
+    --dark: hsla(280, 9%, 20%, 1);
+    --medium-light: hsla(346, 69%, 80%, 1);
+    --light: hsla(156, 100%, 99%, 1);
+    --secondary-color: hsla(168, 37%, 33%, 1);
+}
+
 body {
-    background-color: bisque;
+    background-color: var(--medium-light);
     margin: 0px;
     font-family: 'Roboto', sans-serif;
     /* vh = viewport height or height of the view area */
@@ -7,15 +15,17 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
+
 .about-page {
     /* background-image: url("images/tile.png"); */
-     /* background-size: 50% 50%; */
+    /* background-size: 50% 50%; */
     background-image: url("images/red-leaf-8319391_1920.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
 }
+
 .about-content {
     max-width: 1000px;
     padding: 3ch;
@@ -32,7 +42,8 @@ img {
     width: 60px;
     padding: 10px;
 }
-.page-header{
+
+.page-header {
     /* background-color: #94d4d6; */
     font-family: 'Lato', sans-serif;
     display: flex;
@@ -40,50 +51,63 @@ img {
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
+    background-color: var(--primary-color);
 }
+
 .site-navigation {
     display: flex;
     flex-direction: row;
 }
+
 .site-navigation a {
     padding: 1em;
     text-decoration: none;
+    color: var(--light);
 }
+
 .site-navigation a:hover {
     background-color: #5c8486;
     color: #c9c9c9;
 }
+
 .dropdown-menu {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top:100%;
-    background-color: aliceblue;
+    top: 100%;
+    background-color: var(--dark);
     max-height: 0vh;
     overflow: hidden;
     transition: linear 0.5s max-height;
 }
+
 .dropdown-menu a {
     white-space: nowrap;
 }
+
 .dropdown {
     position: relative;
 }
-.dropdown > a {
+
+.dropdown>a {
     display: block;
 }
-.dropdown > a::after {
+
+.dropdown>a::after {
     content: "\2bc6";
     font-size: 0.8em;
     margin-left: 0.5em;
 }
+
 .dropdown:hover .dropdown-menu {
     max-height: 30vh;
     overflow: hidden;
 }
+
 .dropdown:last-child .dropdown-menu {
     right: 0px;
 }
+
 .nav-button {
     background-color: transparent;
     border: solid 1px #999999;
@@ -92,14 +116,17 @@ img {
     margin-left: 1em;
     display: none;
 }
+
 .nav-button i {
     font-size: 2em;
     padding: 0.5em;
     padding-bottom: 0.1em;
 }
+
 .button-text {
     display: block;
 }
+
 .banner {
     background-color: #5c8486;
     min-height: 50vh;
@@ -110,10 +137,33 @@ img {
     background-position: center -200px;
     background-repeat: no-repeat;
 }
+
 .banner-text {
     color: #171717;
     font-size: 4em;
     text-shadow: 0px 0px 2px black;
+}
+
+.slide {
+    min-height: 50vh;
+    width: 100%;
+    background-color: var(--secondary-color);
+    display: grid;
+    place-items: center center;
+}
+.slide h2 {
+    font-size: 4em;
+    color: var(--light);
+    text-shadow: 0px 0px 2px black;
+}
+.slide:nth-child(1) {
+    background-color: var(--dark);
+}
+.slide:nth-child(2) {
+    background-color: var(--medium-light);
+}
+.slide:nth-child(3) {
+    background-color: var(--light);
 }
 .content {
     display: grid;
@@ -123,21 +173,25 @@ img {
     row-gap: 2ch;
     max-width: 1200px;
     padding: 1em;
-    margin: 5ch auto; 
+    margin: 5ch auto;
 }
+
 .card-image {
     aspect-ratio: 4/3;
     object-fit: cover;
     object-position: center;
 }
+
 .card {
     border: solid 1px #a7a7a7;
     border-radius: 1ch;
     overflow: hidden;
 }
+
 .card-content {
     padding: 2ch;
 }
+
 .card2 {
     grid-column: span 2;
 }
@@ -148,10 +202,12 @@ img {
     justify-content: center;
     gap: 3ch;
 }
+
 .social a {
     font-size: 2em;
     color: #3a5355
 }
+
 .copyright {
     text-align: center;
 }
@@ -161,10 +217,12 @@ img {
     max-width: 600px;
     margin: 12ch auto;
 }
-#contact-form > label {
+
+#contact-form>label {
     display: block;
     font-weight: 500;
 }
+
 #contact-form .input {
     display: block;
     width: 100%;
@@ -173,10 +231,12 @@ img {
     padding: 1ch;
     border-radius: 0.5em;
 }
+
 #contact-form .input:focus {
     background-color: lightyellow;
     outline: dotted;
 }
-.radiobuttons > label {
+
+.radiobuttons>label {
     display: inline-block;
 }

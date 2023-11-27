@@ -16,6 +16,9 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js"></script>
+    <!-- flickity carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -42,8 +45,25 @@
         </nav>
     </header>
     <main>
-        <div class="banner">
+        <!-- <div class="banner">
             <h1 class="banner-text">Welcome</h1>
+        </div> -->
+        <div class="home-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+            <div class="slide">
+                <h2>1</h2>
+            </div>
+            <div class="slide">
+                <h2>2</h2>
+            </div>
+            <div class="slide">
+                <h2>3</h2>
+            </div>
+            <div class="slide">
+                <h2>4</h2>
+            </div>
+            <div class="slide">
+                <h2>5</h2>
+            </div>
         </div>
         <div class="content">
             <div class="card card2">
